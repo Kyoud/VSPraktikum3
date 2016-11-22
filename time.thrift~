@@ -1,0 +1,14 @@
+struct valuesStruct {
+	1: string unixtime,
+	2: int64 t0,
+	3: int64 t1,
+	4: int64 t2,
+	5: int64 t3	
+}
+
+service timeserver {
+    void ping(),
+    valuesStruct time()
+}
+
+
